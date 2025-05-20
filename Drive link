@@ -1,15 +1,2 @@
 https://drive.google.com/drive/mobile/folders/1Z4e8fx7yzJdpHtYg0Zwvg69cUC4HyAjK?usp=sharing_eip&ts=68173421
-df = df withColumn ("age_group",
-when (col ("age") -between (18, 25),
-"18-25")
-•when (col ("age") -between (26, 35),
-"26-35")
-«when (col("age") .between (36, 45),
-"36-45")
-•when (col ("age") -between (46, 55),
-"46-55")
--when (col("age") -between (56, 65),
--When (col("age") › 65, "65+"))
-"56-65")
-avg_spent = df groupBy("age_group") -agg (avg(col("amt")) -alias ("avg_amount_spent"))
-avg_spent orderBy("age_group") - show()
+
